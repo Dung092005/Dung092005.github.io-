@@ -1,0 +1,107 @@
+
+#name{
+    background-color : #2b9fa6;
+    text-align : center;
+    padding : 80px;
+}
+nav {
+    background-color: #a3b100 ;
+    /* padding : 14px 20px ; */
+    overflow : hidden;
+}
+h1 {
+    margin : 0;
+}
+nav a{
+    padding: 14px 30px;
+    text-align: center ;
+    text-decoration:none; 
+    color: #DDD;
+    display : block;
+    float : left;
+
+}
+nav a:hover {
+    background-color: #DDD;  /* Nền xám nhạt khi hover */
+    color: black;            /* Chữ chuyển sang đen khi hover */
+}
+.menu_left{
+    float: left;
+}
+.menu_right{
+    float: right;
+}
+#left_side{
+    flex : 30%;
+    background-color:#f1f1f1;
+    padding : 10px 20px;
+}
+#right_side{
+    flex : 70% ;
+    padding : 10px 20px;
+    
+}
+#flex_box{
+    display: flex ;
+    /* flex-wrap:wrap; */
+}
+footer{
+    background-color : black; 
+    color : white;
+    text-align : center;
+    padding : 20px 10px;
+}
+footer > a { 
+    color : white;
+}
+
+.product{
+    /* cái này dùng width 33%cx tương tự */
+    flex : 33%;                      
+    text-align: center;
+}
+#image_2{
+    height: 270px;
+    
+}
+.image_product{
+    width : 60%;
+}
+.product_title {
+    min-height: 30px; /* điều chỉnh tùy font-size */
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
+
+.product_discrip {
+    min-height: 60px; /* điều chỉnh để các dòng mô tả không bị lệch */
+    font-size: 20px;
+    padding: 0 20px 20px 20px;
+}
+#product_contener {
+    display : flex;
+    flex-wrap: wrap;  
+}
+@media(max-width : 800px){
+    #left_side{
+        flex : 100%;
+        
+    } 
+    #right_side{
+        flex: 100%;
+    }
+    #flex_box {
+        flex-wrap: wrap;
+    }
+    .product{
+        flex : 50%; 
+        flex-wrap: wrap;  
+    }
+    
+}
+
+
+
+
+    
